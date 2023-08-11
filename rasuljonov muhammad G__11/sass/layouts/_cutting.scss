@@ -1,0 +1,37 @@
+@import "../utils";
+
+.cutting {
+  flex-wrap: wrap;
+	margin-top: 150px;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+
+	.chap {
+		display: flex;
+		flex-direction: column;
+		gap: 25px;
+  h3{
+   @include Manrope($qora,32px,800);
+
+
+  }
+  p{
+   @include Manrope($kulrang,20px,600);
+  }
+
+  a{
+   @include Manrope($oq,14px,700);
+  border-radius: 8px;
+background: var(--primary, #D760C7);
+display: flex;
+width: 195px;
+height: 30px;
+padding: 12px 16px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+flex-shrink: 0;
+}
+	}
+}

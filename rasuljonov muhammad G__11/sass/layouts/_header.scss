@@ -1,0 +1,59 @@
+@import "../base";
+@import "../utils";
+header {
+
+	.yoq {
+		display: none;
+	}
+}
+header {
+	display: flex;
+	box-sizing: border-box;
+	padding: 20px;
+	justify-content: space-between;
+	span {
+		display: flex;
+		align-items: center;
+		gap: 20px;
+	}
+	h3 {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+	}
+	p {
+		display: flex;
+		gap: 10px;
+		align-items: center;
+	}
+}
+a {
+	text-decoration: none;
+}
+header {
+	h3 {
+		leading-trim: both;
+		text-edge: cap;
+		@include Manrope($kulrang, 29px, 800);
+	}
+	.push {
+		leading-trim: both;
+		text-edge: cap;
+		@include Manrope($pushti, 16px, 700);
+	}
+	p {
+		@include Manrope($kulrang, 16px, 700);
+	}
+	.btn-push {
+		@include Manrope($pushti, 16px, 700);
+		border-radius: 8px;
+		border: 1px solid var(--button-text, #d760c7);
+		padding: 8px 15px;
+	}
+	.btn-kok {
+		border-radius: 8px;
+		background: var(--secondary-100, #3dd8d0);
+		padding: 8px 15px;
+		@include Manrope($oq, 16px, 700);
+	}
+}

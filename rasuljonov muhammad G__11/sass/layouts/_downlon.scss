@@ -1,0 +1,39 @@
+@import "../utils";
+.downlon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 50px;
+ flex-wrap: wrap;
+	margin-top: 150px;
+	.ong {
+		display: flex;
+		flex-direction: column;
+		gap: 15px;
+		span {
+			gap: 5px;
+			display: flex;
+			h3 {
+				@include Manrope($qora, 32px, 800);
+				line-height: 110%;
+			}
+			.push {
+				@include Manrope($pushti, 32px, 800);
+				line-height: 110%;
+			}
+			p {
+				@include Manrope($kulrang, 20px, 600);
+			}
+		}
+	}
+	.app {
+		display: flex;
+		gap: 15px;
+
+		span {
+			gap: 15px;
+			display: flex;
+			flex-direction: column;
+		}
+	}
+}

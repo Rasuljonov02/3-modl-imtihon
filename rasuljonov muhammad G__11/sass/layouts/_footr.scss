@@ -1,0 +1,55 @@
+@import "../utils";
+footer {
+ margin-top: 80px;
+	background-color: $qora;
+	color: white;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+	justify-content: space-between;
+	box-sizing: border-box;
+	padding: 50px 40px;
+	.chap {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 5rem;
+		.parp {
+			display: flex;
+			flex-direction: column;
+			gap: 15px;
+			span {
+				display: flex;
+				flex-direction: column;
+				gap: 10px;
+			}
+			h3 {
+				@include Manrope($oq, 18px, 700);
+			}
+			p {
+				@include Manrope($kulrang, 14px, 400);
+			}
+		}
+		.sss {
+			margin-top: 40px;
+		}
+	}
+	.ong {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		height: 150px;
+		.z {
+			display: flex;
+			flex-direction: column;
+			gap: 8px;
+			h3 {
+				color: #fff;
+				font-family: Manrope;
+				font-size: 18px;
+				font-style: normal;
+				font-weight: 400;
+				line-height: normal;
+			}
+		}
+	}
+}
